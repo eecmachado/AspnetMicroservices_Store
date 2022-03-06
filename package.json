@@ -1,0 +1,32 @@
+{
+  "name": "Store",
+  "version": "0.1.0",
+  "description": "A design structure based on Clean Architecture concepts.",
+  "repository": "https://github.com/eecmachado/AspnetMicroservices_Store",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^6.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install .config/husky && git config gitflow.path.hooks .config/husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "semantic-release-ado": "^1.2.2"
+  }
+}
