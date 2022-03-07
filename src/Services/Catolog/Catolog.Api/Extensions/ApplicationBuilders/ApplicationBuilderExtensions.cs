@@ -11,6 +11,7 @@ public static class WebApplicationExtensions
         app.UseSerilogRequestLogging();
         app.UseSwagger();
         app.UseSwaggerUI(c=>c.SwaggerEndpoint("v1/swagger.json","Catalog.Api v1"));
+        app.UseRouting();
         app.UseAuthorization();
         app.MapControllers();
     }

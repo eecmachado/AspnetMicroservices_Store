@@ -1,24 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1F26E0CC-6326-4C6D-80DC-0A2A755A88B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C1F4A66-381D-4D2A-A5B3-BF04BCE2E4D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catolog.Api", "Services\Catolog\Catolog.Api\Catolog.Api.csproj", "{20B6657B-22F8-456A-858D-3B224C69E279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catolog.Api", "Services\Catolog\Catolog.Api\Catolog.Api.csproj", "{20B6657B-22F8-456A-858D-3B224C69E279}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{96884E13-645A-4E6C-AF0A-832EBA2266BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{1F26E0CC-6326-4C6D-80DC-0A2A755A88B1} = {6C1F4A66-381D-4D2A-A5B3-BF04BCE2E4D6}
-		{20B6657B-22F8-456A-858D-3B224C69E279} = {1F26E0CC-6326-4C6D-80DC-0A2A755A88B1}
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{20B6657B-22F8-456A-858D-3B224C69E279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20B6657B-22F8-456A-858D-3B224C69E279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B6657B-22F8-456A-858D-3B224C69E279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B6657B-22F8-456A-858D-3B224C69E279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96884E13-645A-4E6C-AF0A-832EBA2266BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96884E13-645A-4E6C-AF0A-832EBA2266BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96884E13-645A-4E6C-AF0A-832EBA2266BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96884E13-645A-4E6C-AF0A-832EBA2266BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F26E0CC-6326-4C6D-80DC-0A2A755A88B1} = {6C1F4A66-381D-4D2A-A5B3-BF04BCE2E4D6}
+		{20B6657B-22F8-456A-858D-3B224C69E279} = {1F26E0CC-6326-4C6D-80DC-0A2A755A88B1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85FE5E69-FC81-4B37-B053-AEDD4142C2CB}
 	EndGlobalSection
 EndGlobal
