@@ -1,7 +1,7 @@
 ﻿using Catolog.Api.Entities;
 using MongoDB.Driver;
 
-namespace Catolog.Api.Data;
+namespace Catolog.Api.Data.Interfaces;
 
 public interface ICatalogContext
 {

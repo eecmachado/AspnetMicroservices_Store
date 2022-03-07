@@ -1,4 +1,5 @@
 ﻿using Catolog.Api.Configurations.Interfaces;
+using Catolog.Api.Data.Interfaces;
 using Catolog.Api.Entities;
 using MongoDB.Driver;
 
