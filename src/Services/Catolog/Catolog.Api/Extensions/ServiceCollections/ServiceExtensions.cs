@@ -1,4 +1,6 @@
-﻿namespace Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.OpenApi.Models;
+
+namespace Microsoft.Extensions.DependencyInjection;
 
 public static class ServiceExtensions
 {
@@ -8,7 +10,11 @@ public static class ServiceExtensions
         services.AddControllers();
         services.AddCorrelationId(configuration);
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1",new OpenApiInfo{Title = "Catalog.Api", Version = "v1"});
+        });
+        services.AddDependecyInjection();
         services.AddMongoDb(configuration);
         
         return services;
